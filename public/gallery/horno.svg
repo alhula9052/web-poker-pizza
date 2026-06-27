@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 390" width="520" height="390">
+<defs>
+<radialGradient id="glow" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#f59e0b" stop-opacity="0.34"/><stop offset="1" stop-color="#2b1208" stop-opacity="1"/></radialGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000" flood-opacity="0.5"/></filter>
+</defs>
+<rect width="520" height="390" rx="34" fill="url(#glow)"/>
+<g filter="url(#shadow)"><rect x="84" y="92" width="352" height="224" rx="32" fill="#1c1009" stroke="#f59e0b" stroke-width="8"/>
+<path d="M128 302c36-124 230-126 272 0" fill="#090604" stroke="#f8d37d" stroke-width="6"/>
+<path d="M252 286c-32-40 20-66 6-112 52 42 72 84 28 124 12-35-14-53-34-12z" fill="#f97316" opacity="0.95"/>
+<path d="M222 288c-18-24 5-42 0-70 34 25 44 54 19 81 5-20-6-32-19-11z" fill="#facc15"/>
+<rect x="85" y="322" width="350" height="28" rx="14" fill="#5a3117"/></g>
+<rect x="22" y="24" width="476" height="342" rx="28" fill="none" stroke="#f8d37d" stroke-opacity="0.26" stroke-width="2"/>
+<text x="260" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffe3a1">Horno artesanal</text>
+</svg>

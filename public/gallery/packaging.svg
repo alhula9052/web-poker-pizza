@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 390" width="520" height="390">
+<defs>
+<radialGradient id="glow" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#e5b74a" stop-opacity="0.34"/><stop offset="1" stop-color="#050505" stop-opacity="1"/></radialGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000" flood-opacity="0.5"/></filter>
+</defs>
+<rect width="520" height="390" rx="34" fill="url(#glow)"/>
+<g filter="url(#shadow)"><rect x="102" y="82" width="316" height="248" rx="24" fill="#090909" stroke="#e5b74a" stroke-width="7"/>
+<path d="M104 142h314" stroke="#ad7b26" stroke-width="5" opacity="0.8"/>
+<circle cx="260" cy="218" r="78" fill="#17110a" stroke="#e9bd55" stroke-width="5"/>
+<text x="260" y="229" text-anchor="middle" font-family="Georgia" font-size="34" fill="#ffd166" font-weight="700">PÓKER</text>
+<text x="260" y="263" text-anchor="middle" font-family="Arial" font-size="22" fill="#fff2b8">PIZZA</text></g>
+<rect x="22" y="24" width="476" height="342" rx="28" fill="none" stroke="#f8d37d" stroke-opacity="0.26" stroke-width="2"/>
+<text x="260" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffe3a1">Packaging premium</text>
+</svg>

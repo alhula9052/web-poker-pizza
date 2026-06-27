@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 390" width="520" height="390">
+<defs>
+<radialGradient id="glow" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#e2a84c" stop-opacity="0.34"/><stop offset="1" stop-color="#4c2c17" stop-opacity="1"/></radialGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#000" flood-opacity="0.5"/></filter>
+</defs>
+<rect width="520" height="390" rx="34" fill="url(#glow)"/>
+<g filter="url(#shadow)"><rect width="520" height="390" fill="#2f1b10"/>
+<path d="M0 115h520M0 200h520M0 286h520" stroke="#7b4a26" stroke-width="12" opacity="0.55"/>
+<circle cx="260" cy="205" r="112" fill="#e7b85a" stroke="#7d3b16" stroke-width="18"/><circle cx="155" cy="110" r="14" fill="#b91c1c" stroke="#140900" stroke-width="3" opacity="0.96"/><circle cx="210" cy="155" r="14" fill="#0f8f43" stroke="#140900" stroke-width="3" opacity="0.96"/><circle cx="280" cy="105" r="14" fill="#111" stroke="#140900" stroke-width="3" opacity="0.96"/><circle cx="330" cy="180" r="14" fill="#fff7d6" stroke="#140900" stroke-width="3" opacity="0.96"/><circle cx="250" cy="235" r="14" fill="#b91c1c" stroke="#140900" stroke-width="3" opacity="0.96"/><circle cx="170" cy="225" r="14" fill="#0f8f43" stroke="#140900" stroke-width="3" opacity="0.96"/><circle cx="345" cy="265" r="14" fill="#fff7d6" stroke="#140900" stroke-width="3" opacity="0.96"/><circle cx="120" cy="290" r="14" fill="#b91c1c" stroke="#140900" stroke-width="3" opacity="0.96"/>
+<rect x="345" y="76" width="78" height="122" rx="12" fill="#fbf0cc" stroke="#e1a844" stroke-width="5" transform="rotate(11 384 137)"/>
+<text x="384" y="138" text-anchor="middle" font-family="Georgia" font-size="36" fill="#171717" transform="rotate(11 384 137)">A</text></g>
+<rect x="22" y="24" width="476" height="342" rx="28" fill="none" stroke="#f8d37d" stroke-opacity="0.26" stroke-width="2"/>
+<text x="260" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#ffe3a1">Mesa rústica</text>
+</svg>
