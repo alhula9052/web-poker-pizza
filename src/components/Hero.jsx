@@ -13,7 +13,7 @@ export default function Hero({ onOrderClick }) {
         <div className="hero-copy casino-hero-copy">
           <span className="eyebrow casino-eyebrow">
             <span className="suit-chip">♠</span>
-            <Sparkles size={16} /> Pizzería artesanal · Villarrica
+            <Sparkles size={16} /> La mesa está servida · Villarrica
           </span>
 
           <div className="hero-title-wrap">
@@ -23,12 +23,16 @@ export default function Hero({ onOrderClick }) {
             </h1>
           </div>
 
-          <p className="hero-slogan">Juega tu mejor mano. Come tu mejor pizza.</p>
+          <p className="hero-slogan">Tu jugada más sabrosa</p>
           <p className="hero-text">
-            Masa artesanal, ingredientes frescos y combinaciones que siempre salen ganadoras.
-            Una experiencia de pizzería con actitud de casino, sin perder el sabor de barrio.
+            Entra a la mesa: pizza artesanal, masa irresistible y combinaciones ganadoras para compartir la partida.
           </p>
 
+          <div className="hero-trust" aria-label="Información del local">
+            <span><strong>100%</strong> artesanal</span>
+            <span><strong>Horno</strong> encendido</span>
+            <span><strong>Villarrica</strong> · Chile</span>
+          </div>
           <div className="hero-actions">
             <a className="btn btn-gold casino-primary" href="#carta">
               Ver la carta
