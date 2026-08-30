@@ -32,9 +32,9 @@ export default function Header({ cartCount, onCartClick }) {
       </nav>
 
       <div className="header-actions">
-        <button className="cart-button" type="button" onClick={onCartClick}>
+        <button className="cart-button" type="button" onClick={onCartClick} aria-label="Abrir pedido">
           <ShoppingCart size={20} />
-          <span>Pedido</span>
+          <span>Mi pedido</span>
           {cartCount > 0 && <strong>{cartCount}</strong>}
         </button>
         <button

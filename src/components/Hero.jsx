@@ -9,13 +9,18 @@ export default function Hero({ onOrderClick }) {
       <div className="hero-content section-content">
         <div className="hero-copy">
           <span className="eyebrow">
-            <Sparkles size={18} /> Pizza artesanal · Villarrica
+            <Sparkles size={18} /> La mesa está servida · Villarrica
           </span>
           <h1>Póker Pizza</h1>
-          <p className="hero-slogan">Apuesta por nuestro sabor</p>
+          <p className="hero-slogan">Tu jugada más sabrosa</p>
           <p className="hero-text">
-            Pizza artesanal con carácter, masa irresistible y combinaciones ganadoras.
+            Entra a la mesa: pizza artesanal, masa irresistible y combinaciones ganadoras para compartir la partida.
           </p>
+          <div className="hero-trust" aria-label="Información del local">
+            <span><strong>100%</strong> artesanal</span>
+            <span><strong>Horno</strong> encendido</span>
+            <span><strong>Villarrica</strong> · Chile</span>
+          </div>
           <div className="hero-actions">
             <a className="btn btn-gold" href="#carta">
               Ver carta
