@@ -1,4 +1,4 @@
-/* Modern casino refresh layered over the existing Póker Pizza styles */
+/* Dirección visual: pizzería de barrio con códigos de casino clásico, sin perder calidez. */
 
 :root {
   --casino-black: #050505;
@@ -754,6 +754,77 @@ body::before {
   .brand-copy small { display: none; }
 }
 
+.menu-stage,
+.promo-section .section-content,
+.gallery-section .section-content,
+.location-section .section-content {
+  position: relative;
+}
+
+.menu-stage::before,
+.promo-section .section-content::before,
+.gallery-section .section-content::before,
+.location-section .section-content::before {
+  content: "";
+  display: block;
+  width: 52px;
+  height: 3px;
+  margin: 0 auto 22px;
+  border-radius: 99px;
+  background: var(--casino-red);
+  opacity: .8;
+}
+
+.menu-heading h2,
+.promo-section h2,
+.gallery-section h2,
+.location-section h2 {
+  letter-spacing: -.045em;
+}
+
+.products-grid-premium {
+  gap: 22px;
+}
+
+.products-grid-premium .product-card {
+  border-radius: 18px;
+  background: rgba(17, 16, 15, .92);
+  box-shadow: 0 18px 50px rgba(0,0,0,.25);
+}
+
+.products-grid-premium .product-body {
+  padding: 22px;
+}
+
+.products-grid-premium .product-image-wrap {
+  aspect-ratio: 1.45;
+}
+
+.products-grid-premium .product-image-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 58%, rgba(0,0,0,.32));
+  pointer-events: none;
+}
+
+.promo-card {
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.gallery-grid figure {
+  border-radius: 18px;
+}
+
+.location-card {
+  border-radius: 18px;
+}
+
+.footer {
+  background: #070707;
+}
+
 @media (max-width: 760px) {
   .section { padding: 78px 0; }
   .section-content { width: min(100% - 24px, 1220px); }
@@ -762,6 +833,18 @@ body::before {
     width: calc(100% - 16px);
     top: 8px;
     margin-top: 8px;
+  }
+
+  .casino-nav {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+  }
+
+  .casino-nav.nav-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .brand-copy strong { font-size: .84rem; }

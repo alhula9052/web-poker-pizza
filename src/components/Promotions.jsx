@@ -4,8 +4,8 @@ export default function Promotions({ promotions }) {
       <div className="section-content">
         <div className="section-heading">
           <span className="eyebrow">Promociones</span>
-          <h2>Jugadas para compartir</h2>
-          <p>Combos atractivos para retiro, delivery y noches especiales.</p>
+          <h2>La casa invita</h2>
+          <p>Combos pensados para compartir, celebrar y comer sin mirar el marcador.</p>
         </div>
         <div className="promo-grid">
           {promotions.map((promo) => (

@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
           <img src="/logo-poker-pizza.png" alt="Póker Pizza" />
           <h2>Póker Pizza</h2>
-          <p>Apuesta por nuestro sabor</p>
+          <p>Pizza artesanal para manos con buen gusto.</p>
         </div>
         <div>
           <h3>Contacto</h3>

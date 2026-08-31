@@ -8,8 +8,8 @@ export default function Gallery({ galleryItems = galleryMock }) {
       <div className="section-content">
         <div className="section-heading">
           <span className="eyebrow">Galería</span>
-          <h2>Ambiente artesanal y premium</h2>
-          <p>Una identidad cálida con horno, madera, cajas negras y detalles dorados.</p>
+          <h2>Donde se juega el sabor</h2>
+          <p>Horno encendido, masa estirada y una mesa lista para compartir.</p>
         </div>
         <div className="gallery-grid">
           {items.map((item) => (
