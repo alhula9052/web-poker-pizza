@@ -21,18 +21,29 @@ body::before { display: none; }
 .section-content { width: min(1240px, calc(100% - 64px)); }
 .section { padding: 112px 0; }
 
-/* Navigation: compact, architectural and readable. */
+/* Navigation: compacta, visible y con códigos de casino clásico. */
 .header {
-  position: sticky;
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  z-index: 999;
   width: min(1240px, calc(100% - 48px));
-  margin: 20px auto 0;
+  margin: 0;
   padding: 8px 10px 8px 14px;
-  border: 1px solid var(--line-light);
+  transform: translateX(-50%);
+  border: 1px solid rgba(224,184,82,.45);
   border-radius: 8px;
-  background: rgba(243,234,216,.94);
-  box-shadow: 0 12px 35px rgba(21,43,36,.1);
+  background: rgba(8,35,27,.96);
+  box-shadow: 0 14px 35px rgba(4,18,13,.3);
   backdrop-filter: blur(18px);
 }
+.header .brand { color: #f3ead8; }
+.header .brand span { color: #f3ead8; }
+.header .nav { color: #d7c89e; }
+.header .nav a { color: #d7c89e; }
+.header .nav a:hover { color: #f0c84b; background: rgba(240,200,75,.12); }
+.header .cart-button { color: #09241a; background: #e0b852; border-color: #e0b852; }
+.header .cart-button strong { color: #f7ead0; background: #bd3f2d; }
 .brand { gap: 9px; color: var(--ink); }
 .brand img { width: 42px; height: 42px; }
 .brand span { font-family: "Playfair Display", Georgia, serif; font-size: 1.12rem; }
@@ -155,6 +166,26 @@ body::before { display: none; }
   .value-card:nth-child(2) { border-right: 0; }
   .value-card:nth-child(-n+2) { border-bottom: 1px solid var(--line-light); }
 }
+@media (max-width: 900px) {
+  .header { width: calc(100% - 28px); }
+  .header .nav { display: none; }
+  .header .nav.nav-open {
+    display: grid;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    gap: 4px;
+    padding: 10px;
+    border: 1px solid rgba(224,184,82,.45);
+    border-radius: 8px;
+    background: rgba(8,35,27,.98);
+    box-shadow: 0 16px 30px rgba(4,18,13,.28);
+  }
+  .header .nav.nav-open a { color: #f3ead8; }
+  .header .menu-button { display: inline-flex; }
+}
+
 @media (max-width: 760px) {
   .section { padding: 78px 0; }
   .section-content { width: min(100% - 28px, 1240px); }
