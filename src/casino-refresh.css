@@ -90,7 +90,9 @@ body::before { display: none; }
 .hero-trust strong { color: var(--tomato); }
 
 .casino-showcase { min-height: 520px; }
-.hero-card.casino-logo-card { min-height: 530px; border: 0; border-radius: 4px; background: var(--ink); box-shadow: var(--shadow-soft); }
+.hero-card.casino-logo-card { min-height: 530px; border: 1px solid rgba(224,184,82,.5); border-radius: 10px; background: #092b20; box-shadow: 0 24px 60px rgba(8,35,27,.28); }
+.hero-card-label { position: absolute; top: 22px; left: 28px; z-index: 2; color: #e0b852; font-size: .68rem; font-weight: 700; letter-spacing: .22em; }
+.casino-logo-card .hero-logo-frame { z-index: 1; }
 .hero-card::before { inset: 14px; border: 1px solid rgba(243,234,216,.25); border-radius: 0; }
 .casino-logo-card .hero-logo-frame { width: 57%; padding: 18px; border: 0; background: transparent; box-shadow: none; }
 .casino-logo-card .hero-logo-frame img { filter: drop-shadow(0 16px 20px rgba(0,0,0,.3)); }
@@ -99,7 +101,8 @@ body::before { display: none; }
 .casino-chip { border-color: var(--paper); width: 58px; height: 58px; }
 .chip-one { background: var(--tomato); }
 .chip-two { background: var(--brass); }
-.floating-card { width: 88px; height: 126px; border-radius: 4px; box-shadow: 0 18px 35px rgba(21,43,36,.28); }
+.floating-card { display: none !important; }
+.hero-card .floating-card { display: none !important; }
 .casino-logo-card .hero-badge { bottom: 24px; color: var(--paper); border-color: rgba(243,234,216,.25); background: rgba(21,43,36,.9); border-radius: 4px; }
 .casino-tagline-card { right: 0; bottom: 0; border-radius: 4px; color: var(--paper); border: 0; background: var(--tomato); }
 .casino-tagline-card p { color: var(--paper); }
@@ -190,7 +193,10 @@ body::before { display: none; }
   .section { padding: 78px 0; }
   .section-content { width: min(100% - 28px, 1240px); }
   .header { width: calc(100% - 20px); margin-top: 10px; border-radius: 6px; }
-  .brand span { display: inline; font-size: .98rem; }
+  .brand span { display: initial; }
+  .brand .brand-copy { display: none; }
+  .brand .brand-mark { display: inline-flex; }
+  .brand .brand-mark img { display: block; width: 42px; height: 42px; }
   .nav { background: var(--paper); border-color: var(--line-light); border-radius: 6px; }
   .nav a { color: var(--ink); }
   .casino-hero { min-height: auto; padding: 70px 0 72px; }
@@ -207,13 +213,14 @@ body::before { display: none; }
   .gallery-grid figure:nth-child(n) { grid-column: span 1; }
 }
 @media (max-width: 480px) {
-  .brand span { display: none; }
+  .brand .brand-copy { display: none; }
+  .brand .brand-mark img { width: 38px; height: 38px; }
   .cart-button span { display: none; }
   .cart-button { padding-inline: 12px; }
   .casino-hero .hero-actions .btn { width: 100%; }
   .casino-showcase { min-height: 350px; }
   .hero-card.casino-logo-card { min-height: 340px; }
-  .floating-card { width: 66px; height: 96px; }
+  .floating-card { display: none; }
   .casino-chip { width: 46px; height: 46px; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }

@@ -60,14 +60,8 @@ export default function Hero({ onOrderClick }) {
         </div>
 
         <div className="casino-showcase" aria-label="Identidad Póker Pizza">
-          <div className="floating-card card-black" aria-hidden="true">
-            <span>A</span><strong>♠</strong>
-          </div>
-          <div className="floating-card card-red" aria-hidden="true">
-            <span>K</span><strong>♥</strong>
-          </div>
-
           <div className="hero-card casino-logo-card">
+            <span className="hero-card-label">LA CASA DEL SABOR</span>
             <div className="casino-ring casino-ring-outer" />
             <div className="casino-ring casino-ring-inner" />
             <div className="hero-logo-frame">
